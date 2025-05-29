@@ -8,17 +8,31 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var isShowingViewController: Bool = false
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Button {
+                isShowingViewController.toggle()
+            } label: {
+                Text("ARView")
+                    .padding()
+                    .foregroundStyle(.white)
+                    .background(.red)
+                    .cornerRadius(20)
+            }
         }
         .padding()
+        
+        .fullScreenCover(isPresented: $isShowingViewController) {
+            ARViewControllerRepresentable()
+                .ignoresSafeArea()
+        }
     }
 }
 
 #Preview {
     ContentView()
 }
+

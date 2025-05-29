@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "addArrows.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
