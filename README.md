@@ -122,33 +122,6 @@ The application follows Clean Architecture principles:
 - Device with LiDAR scanner (for scanning features)
 - ARKit compatible device
 
-## 🏗 Project Structure
-
-```
-ARViewUIKit/
-├── Domain/
-│   ├── Entities/
-│   ├── UseCases/
-│   └── Repositories/
-├── Data/
-│   ├── Repositories/
-│   └── DataSources/
-├── Presentation/
-│   ├── Views/
-│   ├── ViewModels/
-│   └── Coordinators/
-├── Core/
-│   ├── Extensions/
-│   └── Utilities/
-├── AR/                    # AR functionality
-├── ModelManager/          # 3D model management
-├── FocusSquare/          # AR focus square implementation
-├── 3DObjects/            # 3D assets
-├── LoadingView/          # Loading states
-├── SwiftData/            # Local data persistence
-└── Cell/                 # Reusable UI components
-```
-
 ## 🔧 Setup
 
 1. Clone the repository
@@ -219,11 +192,6 @@ The app requires the following permissions:
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-### Coding Standards
-- Follow Swift API Design Guidelines
-- Use SwiftLint for code consistency
-- Write unit tests for new features
-- Document public APIs
 
 ## 📄 License
 
@@ -232,7 +200,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👤 Author
 
 Adnann Muratovic
-- GitHub: [@yourusername](https://github.com/yourusername)
 
 ## 🙏 Acknowledgments
 
